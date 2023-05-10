@@ -1,12 +1,220 @@
-<!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-  </head>
-  <body>
+    <!DOCTYPE html>
+    <html lang="ru">
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+      <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+        <link rel="stylesheet" href="styles/style.css">
+        <title>HTML Academy: Глейси</title>
+      </head>
 
-  </body>
-</html>
+      <body>
+        <div class="page-container">
+          <div class="content-wrapper">
+            <header class="page-header">
+              <nav class="header-navigation">
+
+                <a class="page-header-link" href="#">
+                  <img class="header-logo" src="images/header-logo.svg" width="137" height="56"
+                    alt="Логотип магазина Глейси.">
+                </a>
+
+                <ul class="header-navigation-list">
+                  <li class="navigation-list-item navigation-list-catalog">
+                    <a class="navigation-item-link navigation-link-catalog" href="#">Каталог
+                    </a>
+                    <div class="subcatalog-wrapper">
+                      <ul class="subcatalog">
+                        <li class="subcatalog-item subcatalog-item-new">
+                          <a href="#" class="subcatalog-item-link">Новинки</a>
+                        </li>
+                        <li class="subcatalog-item">
+                          <a href="#" class="subcatalog-item-link">Сливочное</a>
+                        </li>
+                        <li class="subcatalog-item">
+                          <a href="#" class="subcatalog-item-link">Щербеты</a>
+                        </li>
+                        <li class="subcatalog-item">
+                          <a href="#" class="subcatalog-item-link">Фруктовый лед</a>
+                        </li>
+                        <li class="subcatalog-item">
+                          <a href="#" class="subcatalog-item-link">Мелорин</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="navigation-item-link" href="#">Доставка и оплата</a>
+                  </li>
+                  <li class="navigation-list-item">
+                    <a class="navigation-item-link" href="#">О компании</a>
+                  </li>
+                </ul>
+              </nav>
+              <div class="user-navigation">
+                <a class="phonenumber-link" href="tel:+78005558628">+7 800 555-86-28</a>
+                <ul class="header-entry-list">
+                  <li class="user-navigation-item">
+                    <a class="user-navigation-link user-navigation-search" href="#">
+                      <svg class="header-search-icon" width="14" height="14" aria-hidden="true" focusable="false"
+                        viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" />
+                      </svg>
+                      <span class="visually-hidden"> Поиск по сайту</span>
+                    </a>
+                    <div class="search-form-wrapper">
+                      <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
+                        <input class="search-form-input" name="form-search" type="text" id="form-search"
+                          placeholder="Поиск по сайту" required>
+                        <label class="visually-hidden" for="form-search">Поиск товара на сайте</label>
+                        <button class="header-form-button" type="button"></button>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="user-navigation-item entry-popover">
+                    <a class="user-navigation-link user-navigation-entry" href="#">
+                      <svg class="header-entry-icon" width="14" height="15" viewBox="0 0 14 15" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M8 1.525c0-.369.298-.667.667-.667h2.666a2 2 0 0 1 2 2v9.333a2 2 0 0 1-2 2H8.667a.667.667 0 0 1 0-1.333h2.666A.667.667 0 0 0 12 12.19V2.858a.666.666 0 0 0-.667-.667H8.667A.667.667 0 0 1 8 1.525ZM4.862 3.72c.26-.26.682-.26.943 0l3.329 3.329a.673.673 0 0 1 .2.476.664.664 0 0 1-.2.476l-3.33 3.328a.667.667 0 1 1-.942-.943l2.195-2.195H.667a.667.667 0 1 1 0-1.333h6.39L4.862 4.663a.667.667 0 0 1 0-.943Z" />
+                      </svg>
+                      <span class="header-entry-text">Вход</span>
+                    </a>
+                    <div class="popover-wrapper">
+                      <section class="popover-auth">
+                        <h2 class="popover-auth-caption">Личный кабинет</h2>
+                        <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
+                          <p class="field-group auth-login-group">
+                            <label for="auth-login" class="visually-hidden"></label>
+                            <input class="auth-form-field" type="email" id="auth-login" name="auth-login"
+                              placeholder="Введите логин">
+                          </p>
+                          <p class="field-group auth-password-group">
+                            <label for="auth-password" class="visually-hidden"></label>
+                            <input class="auth-form-field" type="password" id="auth-password" name="auth-password"
+                              placeholder="Введите пароль">
+                          </p>
+
+                          <button class="popover-auth-button" type="submit">Войти</button>
+                          <div class="form-register-wrapper">
+                            <a href="#" class="auth-form-recovery">Забыли пароль?</a>
+                            <a href="#" class="auth-form-register">Регистрация</a>
+                          </div>
+
+                        </form>
+                      </section>
+                    </div>
+
+
+                  </li>
+                  <li class="user-navigation-item cart-item">
+                    <a class="user-navigation-link user-navigation-cart" href="#">
+                      <svg class="header-cart-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
+                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+                        <path fill-rule="evenodd" clip-rule="evenodd"
+                          d="M1.167.108a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.644a.667.667 0 0 0-.654-.536H1.167ZM5.69 8.402l-.813-4.064h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" />
+                      </svg>
+                      <span class="products-quantity">2 товара</span>
+                    </a>
+                    <div class="cart-popover-wrapper">
+                      <section class="cart-popover">
+                        <h2 class="cart-popover-caption">Корзина</h2>
+                        <ul class="cart-popover-list">
+                          <li class="cart-popover-item">
+                            <a href="#" class="cart-item-link">
+                              <img src="images/cart-raspberry-image.jpg" alt="Малиновое мороженое."
+                                class="cart-item-img">
+                            </a>
+                            <div class="cart-caption-wrapper">
+                              <h3 class="cart-product-caption">Малинка</h3>
+                              <span class="cart-product-quantity">1 кг х 310 ₽</span>
+                            </div>
+                            <span class="cart-product-price">310 ₽</span>
+                            <button class="cart-product-button" type="button"></button>
+                          </li>
+                          <li class="cart-popover-item">
+                            <a href="#" class="cart-item-link">
+                              <img src="images/cart-bubble-gum-image.jpg" alt="Мороженое бабл-гам."
+                                class="cart-item-img">
+                            </a>
+                            <div class="cart-caption-wrapper">
+                              <h3 class="cart-product-caption">Бабл-гам</h3>
+                              <span class="cart-product-quantity">1,5 кг х 320 ₽</span>
+                            </div>
+                            <p class="cart-product-price">480 ₽</p>
+                            <button class="cart-product-button" type="button"></button>
+                          </li>
+                        </ul>
+                        <div class="cart-order-wrapper">
+                          <a class="cart-order-link" href="#">Оформить заказ</a>
+                          <span class="">Итого: 790 ₽</span>
+                        </div>
+
+                      </section>
+                    </div>
+
+                  </li>
+                </ul>
+              </div>
+            </header>
+            <main class="main-index">
+
+            </main>
+            <footer class="page-footer">
+              <div class="socials-wrapper">
+                <ul class="socials-list">
+                  <li class="socials-list-item">
+                    <a href="" class="footer-socials-link footer-socials-telegram">
+                      <span class="visually-hidden">Тelegram</span>
+                    </a>
+                  </li>
+                  <li class="socials-list-item">
+                    <a href="" class="footer-socials-link footer-socials-vkontakte">
+                      <span class="visually-hidden">В контакте</span>
+                    </a>
+                  </li>
+                  <li class="socials-list-item">
+                    <a href="" class="footer-socials-link footer-socials-youtube">
+                      <span class="visually-hidden">Youtube</span>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <div class="footer-about-wrapper">
+                <ul class="about-production-list">
+                  <li class="about-production-item">
+                    <a href="#" class="about-production-link production-link-heart">Для поставщиков</a>
+                  </li>
+                  <li class="about-production-item">
+                    <a href="#" class="about-production-link">
+                      О производстве
+                    </a>
+                  </li>
+                </ul>
+                <ul class="about-documents">
+                  <li class="about-documents-item">
+                    <a href="#" class="about-documents-link">Наши документы</a>
+                  </li>
+                  <li class="about-documents-item">
+                    <a href="#" class="about-documents-link">Экологические стандарты</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="html-academy-about">
+                <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
+                  <img class="html-academy-logo" src="images/logo-htmlacademy.svg" width="93" height="27"
+                    alt="Логотип HTML-академии.">
+                </a>
+                <a class="copyright-row" href="https://htmlacademy.ru/">
+                  Сделано в .html academy © 2021</a>
+              </div>
+            </footer>
+          </div>
+        </div>
+
+      </body>
+
+    </html>
