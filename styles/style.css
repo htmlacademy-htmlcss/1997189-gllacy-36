@@ -551,7 +551,7 @@ body {
   padding-top: 10px;
   top: 100%;
   right: 0;
-  z-index: 4;
+  z-index: 6;
 }
 
 .entry-popover {
@@ -637,7 +637,7 @@ body {
 .cart-popover-wrapper {
   position: absolute;
   display: none;
-  z-index: 4;
+  z-index: 6;
   padding-top: 10px;
   top: 100%;
   right: 0;
@@ -705,6 +705,7 @@ body {
   width: 10px;
   height: 10px;
   border: none;
+  cursor: pointer;
 }
 
 .cart-form-button {
