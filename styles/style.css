@@ -584,6 +584,7 @@ body {
 .auth-form {
   display: grid;
   grid-template-columns: 115px 17px 115px 73px;
+  row-gap: 16px;
 }
 
 .auth-login-group {
