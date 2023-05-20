@@ -11,7 +11,7 @@
       </head>
 
       <body>
-        <div class="page-container">
+        <div class="page-container ">
           <div class="content-wrapper">
             <header class="page-header">
               <h1 class="visually-hidden">Магазин мороженого Глейси.</h1>
@@ -32,7 +32,7 @@
                           <a href="#" class="subcatalog-item-link">Новинки</a>
                         </li>
                         <li class="subcatalog-item">
-                          <a href="#" class="subcatalog-item-link">Сливочное</a>
+                          <a href="catalog.html" class="subcatalog-item-link">Сливочное</a>
                         </li>
                         <li class="subcatalog-item">
                           <a href="#" class="subcatalog-item-link">Щербеты</a>
@@ -55,8 +55,9 @@
                 </ul>
               </nav>
               <nav class="user-navigation">
+                <div class="phonenumber-link-wrapper">
                 <a class="phonenumber-link" href="tel:+78005558628">+7 800 555-86-28</a>
-
+              </div>
                 <ul class="header-entry-list">
                   <li class="user-navigation-item">
                     <a class="user-navigation-link user-navigation-search" href="#">
@@ -177,16 +178,16 @@
               <section class="welcome-slider">
                 <h2 class="visually-hidden">Демонстрация мороженого.</h2>
                 <div class="slider-screen">
+                  <div class="slider-screen-buttons-wrapper">
                   <button class="slider-button-arrow previous-button">
                     <span class="visually-hidden">Предыдущий слайд</span>
                   </button>
-
                   <button class="slider-button-arrow next-button">
                     <span class="visually-hidden">Следующий слайд</span>
                   </button>
                   <ul class="slider-screen-list">
-                    <li class="slider-screen-item">
-                      <div class="ice-cream-desc ice-cream-desc-current">
+                    <li class="slider-screen-item slider-screen-item-current ">
+                      <div class="ice-cream-desc">
                         <h3 class="ice-cream-caption">Нежный пломбир
                           с&nbsp;клубничным джемом</h3>
                         <p class="ice-cream-text">Натуральное мороженое из свежих сливок
@@ -194,7 +195,7 @@
                         <a class="slider-order-link link link-spinner-button " href="#">Заказать</a>
                       </div>
                       <div class="slider-img-wrapper">
-                        <a href="#" class="slider-img-link slider-img-link-current">
+                        <a href="#" class="slider-img-link">
                           <img class="slider-img slider-image-strawberry" src="images/strawberry-ice-cream-large.png"
                             width="328" height="507" alt="Клубничное мороженое.">
                         </a>
@@ -232,6 +233,7 @@
                       </div>
                     </li>
                   </ul>
+                </div>
 
                   <div class="slider-dots-wrapper">
                     <ol class="slider-dots-list">
@@ -283,7 +285,7 @@
                 <p class="promotion-slogan slogan">Заказывайте мороженое<br>и получайте подарки!</p>
                 <div class="promotion-description promotion-desc-raspberry">
                   <h3 class="promotion-caption">Малинка даром!</h3>
-                  <p class="promotion-text">При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку
+                  <p class="promotion-text">При покупке 2 кг любого фруктового мороженого добавим в&nbsp;ваш заказ банку
                     малинового варенья бесплатно</p>
                   <a href="#" class="promotion-button link">Хочу подарок</a>
                 </div>
@@ -291,7 +293,7 @@
                 <div class="promotion-description promotion-desc-marshmallow
                 ">
                   <h3 class="promotion-caption">Маршмеллоу даром!</h3>
-                  <p class="promotion-text">При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок
+                  <p class="promotion-text">При покупке 2 кг пломбира добавим в&nbsp;ваш заказ упаковку нежных зефирок
                     совершенно бесплатно.</p>
                   <a href="#" class="promotion-button link">Хочу подарок</a>
                 </div>
@@ -303,34 +305,29 @@
                   <li class="products-list-item">
                     <a href="#" class="products-item-link">
                       <div class="product-img-wrapper">
-                        <img class="product-item-img" src="images/product-presentation-raspberry.jpg"
-                          alt="Мороженое малиновое.">
+                        <img class="product-item-img" src="images/product-presentation-raspberry.jpg" alt="Мороженое малиновое.">
                       </div>
-                    </a>
-                    <a class="product-caption-link" href="#">
                       <h3 class="products-item-caption">Малинка</h3>
                     </a>
                     <p class="products-item-desc">Сливочное мороженое с малиновым джемом</p>
                     <div class="products-price-wrapper">
                       <span class="products-price"> 310 ₽/кг</span>
                       <a class="products-cart-icon" href="#">
-                        <svg class="cart-icon" width="15" height="14" viewBox="0 0 15 14" fill="none"
-                          xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Поместить в корзину.">
-                          <path fill-rule="evenodd" clip-rule="evenodd"
-                            d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z" />
+                        <svg class="cart-icon" width="15" height="14" viewBox="0 0 15 14" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Поместить в корзину.">
+                          <path fill-rule="evenodd" clip-rule="evenodd" d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"></path>
                         </svg>
                       </a>
                     </div>
 
                   </li>
+
+
                   <li class="products-list-item">
                     <a href="#" class="products-item-link">
                       <div class="product-img-wrapper">
                         <img class="product-item-img" src="images/pistachio-ice-cream.jpg" alt="Мороженое фисташковое.">
                       </div>
-                    </a>
-                    <a class="product-caption-link" href="#">
-                      <h3 class="products-item-caption">Фисташка</h3>
+                         <h3 class="products-item-caption">Фисташка</h3>
                     </a>
                     <p class="products-item-desc">Фисташковый пломбир с кусочками шоколада</p>
                     <div class="products-price-wrapper">
@@ -350,12 +347,11 @@
                       <div class="product-img-wrapper">
                         <img src="images/blueberry-ice-cream.jpg" alt="Черничное мороженое." class="product-item-img">
                       </div>
-                    </a>
-                    <a class="product-caption-link" href="#">
+
                       <h3 class="products-item-caption">Черника</h3>
                     </a>
                     <p class="products-item-desc">Крем-брюле
-                      с черничным джемом</p>
+                      с&nbsp;черничным джемом</p>
                     <div class="products-price-wrapper">
                       <span class="products-price">330 ₽/кг</span>
                       <a class="products-cart-icon" href="#">
@@ -374,12 +370,11 @@
                         <img src="images/bubble-gum-ice-cream.jpg" alt="Мороженое со вкусом bubble-gum."
                           class="product-item-img">
                       </div>
-                    </a>
-                    <a class="product-caption-link" href="#">
+
                       <h3 class="products-item-caption">Бабл-гам</h3>
                     </a>
                     <p class="products-item-desc">Ванильный пломбир
-                      со сладкой посыпкой</p>
+                      со&nbsp;сладкой посыпкой</p>
                     <div class="products-price-wrapper">
                       <span class="products-price">320 ₽/кг</span>
                       <a class="products-cart-icon" href="#">
@@ -422,12 +417,14 @@
               <div class="subscribe-wrapper">
                 <section class="blog">
                   <span class="blog-row">Новое в нашем блоге</span>
+                  <a href="#" class="about-searving-caption-link">
                   <h2 class="about-searving-caption">10 способов сервировки фруктовых щербетов к&nbsp;столу</h2>
+                </a>
                 </section>
                 <section class="subscribe">
                   <div class="subscribe-box">
                     <h2 class="visually-hidden">Подписка на рассылку</h2>
-                    <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе всего самого
+                    <p class="subscribe-text">Подпишитесь на нашу сладкую рассылку и будьте всегда в&nbsp;курсе всего самого
                       вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)
                     </p>
                     <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -472,7 +469,7 @@
               <section class="contacts">
                 <h2 class="visually-hidden">Контакты компании Глейси.</h2>
                 <div class="contacts-wrapper">
-                  <h3 class="address-caption">Адрес главного офиса и офлайн-магазина:</h3>
+                  <h3 class="address-caption">Адрес главного офиса<br>и офлайн-магазина:</h3>
                   <address class="address">
                     <p class="address-info">
                       наб. реки Карповки,<br>5 лит П, Санкт-Петербург
