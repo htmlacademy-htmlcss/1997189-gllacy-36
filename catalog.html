@@ -14,7 +14,7 @@
     <div class="page-container ">
       <div class="content-wrapper">
         <header class="page-header catalog-header">
-          <h1 class="visually-hidden">Страница каталога магазин мороженого Глейси.</h1>
+          <h1 class="visually-hidden">Магазин мороженого Глейси.</h1>
           <nav class="header-navigation">
 
             <a class="page-header-link" href="index.html">
@@ -27,6 +27,7 @@
                 <a class="navigation-item-link navigation-link-catalog" href="#">Каталог
                 </a>
                 <div class="subcatalog-wrapper">
+
                   <ul class="subcatalog">
                     <li class="subcatalog-item subcatalog-item-new">
                       <a href="#" class="subcatalog-item-link">Новинки</a>
@@ -55,17 +56,18 @@
             </ul>
           </nav>
           <nav class="user-navigation">
+            <div class="phonenumber-link-wrapper">
             <a class="phonenumber-link" href="tel:+78005558628">+7 800 555-86-28</a>
-
+          </div>
             <ul class="header-entry-list">
               <li class="user-navigation-item">
                 <a class="user-navigation-link user-navigation-search" href="#">
-                  <svg class="header-search-icon" width="14" height="14" aria-hidden="true" focusable="false" role="img"
-                    viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <svg class="header-search-icon" width="14" height="14" aria-hidden="true" focusable="false"
+                    role="img" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path fill-rule="evenodd" clip-rule="evenodd"
                       d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" />
                   </svg>
-                  <span class="visually-hidden"> Кнопка поиска по сайту</span>
+                  <span class="visually-hidden"> Кнопка поиска по сайту.</span>
                 </a>
                 <div class="search-form-wrapper">
                   <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -91,18 +93,18 @@
                   <section class="popover-auth">
                     <h2 class="popover-auth-caption">Личный кабинет</h2>
                     <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                      <p class="field-group auth-login-group">
+                      <div class="field-group auth-login-group">
                         <label for="auth-login" class="visually-hidden"></label>
                         <input class="auth-form-field" type="email" id="auth-login" name="auth-login"
                           placeholder="Введите логин" required>
-                      </p>
-                      <p class="field-group auth-password-group">
+                      </div>
+                      <div class="field-group auth-password-group">
                         <label for="auth-password" class="visually-hidden"></label>
                         <input class="auth-form-field" type="password" id="auth-password" name="auth-password"
                           placeholder="Введите пароль" required>
-                      </p>
+                      </div>
 
-                      <button class="popover-auth-button" type="submit">Войти</button>
+                      <button class="popover-auth-button button" type="submit">Войти</button>
                       <div class="form-register-wrapper">
                         <a href="#" class="auth-form-recovery">Забыли пароль?</a>
                         <a href="#" class="auth-form-register">Регистрация</a>
@@ -129,7 +131,8 @@
                       <ul class="cart-popover-list">
                         <li class="cart-popover-item">
                           <a href="#" class="cart-item-link">
-                            <img src="images/cart-raspberry-image.jpg" alt="Малиновое мороженое." class="cart-item-img">
+                            <img src="images/cart-raspberry-image.jpg" alt="Малиновое мороженое."
+                              class="cart-item-img">
                             <div class="cart-caption-wrapper">
                               <h3 class="cart-product-caption">Малинка
                               </h3>
@@ -144,7 +147,8 @@
                         </li>
                         <li class="cart-popover-item">
                           <a href="#" class="cart-item-link">
-                            <img class="cart-item-img" src="images/cart-bubble-gum-image.jpg" alt="Мороженое бабл-гам.">
+                            <img class="cart-item-img" src="images/cart-bubble-gum-image.jpg"
+                              alt="Мороженое бабл-гам.">
                             <div class="cart-caption-wrapper">
                               <h3 class="cart-product-caption">Бабл-гам</h3>
                               <input type="hidden" id="product-cart-bubblegum" name="product"
@@ -152,15 +156,15 @@
                               <span class="cart-product-quantity">1,5 кг х 320 ₽</span>
                             </div>
                           </a>
-                          <p class="cart-product-price">480 ₽</p>
+                          <span class="cart-product-price">480 ₽</span>
                           <button class="cart-product-button" type="button">
                             <span class="visually-hidden">Удалить товар из корзины.</span>
                           </button>
                         </li>
                       </ul>
                       <div class="cart-order-wrapper">
-                        <button type="submit" class="cart-form-button">Оформить заказ</button>
-                        <span class="">Итого: 790 ₽</span>
+                        <button type="submit" class="cart-form-button button">Оформить заказ</button>
+                        <span class="cart-total-price">Итого: 790 ₽</span>
                       </div>
                     </form>
                     <div class="cart-popover-empty">Ваша корзина пока пуста</div>

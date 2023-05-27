@@ -27,6 +27,7 @@
                     <a class="navigation-item-link navigation-link-catalog" href="#">Каталог
                     </a>
                     <div class="subcatalog-wrapper">
+
                       <ul class="subcatalog">
                         <li class="subcatalog-item subcatalog-item-new">
                           <a href="#" class="subcatalog-item-link">Новинки</a>
@@ -66,7 +67,7 @@
                         <path fill-rule="evenodd" clip-rule="evenodd"
                           d="M1.663 6.188a4.667 4.667 0 1 1 8.028 3.237.674.674 0 0 0-.124.124 4.667 4.667 0 0 1-7.904-3.361Zm8.412 4.688a6 6 0 1 1 .943-.943l2.45 2.45a.667.667 0 1 1-.943.943l-2.45-2.45Z" />
                       </svg>
-                      <span class="visually-hidden"> Кнопка поиска по сайту</span>
+                      <span class="visually-hidden"> Кнопка поиска по сайту.</span>
                     </a>
                     <div class="search-form-wrapper">
                       <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -92,18 +93,18 @@
                       <section class="popover-auth">
                         <h2 class="popover-auth-caption">Личный кабинет</h2>
                         <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
-                          <p class="field-group auth-login-group">
+                          <div class="field-group auth-login-group">
                             <label for="auth-login" class="visually-hidden"></label>
                             <input class="auth-form-field" type="email" id="auth-login" name="auth-login"
                               placeholder="Введите логин" required>
-                          </p>
-                          <p class="field-group auth-password-group">
+                          </div>
+                          <div class="field-group auth-password-group">
                             <label for="auth-password" class="visually-hidden"></label>
                             <input class="auth-form-field" type="password" id="auth-password" name="auth-password"
                               placeholder="Введите пароль" required>
-                          </p>
+                          </div>
 
-                          <button class="popover-auth-button" type="submit">Войти</button>
+                          <button class="popover-auth-button button" type="submit">Войти</button>
                           <div class="form-register-wrapper">
                             <a href="#" class="auth-form-recovery">Забыли пароль?</a>
                             <a href="#" class="auth-form-register">Регистрация</a>
@@ -155,15 +156,15 @@
                                   <span class="cart-product-quantity">1,5 кг х 320 ₽</span>
                                 </div>
                               </a>
-                              <p class="cart-product-price">480 ₽</p>
+                              <span class="cart-product-price">480 ₽</span>
                               <button class="cart-product-button" type="button">
                                 <span class="visually-hidden">Удалить товар из корзины.</span>
                               </button>
                             </li>
                           </ul>
                           <div class="cart-order-wrapper">
-                            <button type="submit" class="cart-form-button">Оформить заказ</button>
-                            <span class="">Итого: 790 ₽</span>
+                            <button type="submit" class="cart-form-button button">Оформить заказ</button>
+                            <span class="cart-total-price">Итого: 790 ₽</span>
                           </div>
                         </form>
                         <div class="cart-popover-empty">Ваша корзина пока пуста</div>
@@ -401,11 +402,11 @@
                   <p class="production-about-text about-suppliers">
                     Закупка ингредиентов производится только
                     у&nbsp;проверенных фермерских хозяйств, с которыми
-                    нас связывает долговременное сотрудничество.
+                    нас&nbsp;связывает долговременное сотрудничество.
                   </p>
                   <p class="production-about-text about-ingredients">
                     Для приготовления мороженого используются сливки и молоко высочайшего качества. Все ингредиенты
-                    и добавки произведены из натурального сырья.
+                    и&nbsp;добавки произведены из натурального сырья.
                   </p>
                   <p class="production-about-text about-temperature">
                     Доставка нашего мороженого осуществляется в специальном термопаке, который не даёт мороженому
@@ -439,15 +440,20 @@
               <section class="delivery">
                 <div class="delivery-desc-wrapper">
                   <h2 class="delivery-caption">Доставка любимого мороженого на дом</h2>
-                  <p class="delivery-desc">Хочется полакомиться любимым десертом,<br> но нет времени съездить в магазин?
-                    Закажите<br>доставку мороженого на дом, и курьер<br> привезёт вам ваш заказ в течение часа!</p>
+                  <p class="delivery-desc">Хочется полакомиться любимым десертом, но&nbsp;нет времени съездить в магазин?
+                    Закажите доставку мороженого на дом, и курьер привезёт вам ваш заказ в течение часа!</p>
                 </div>
                 <div class="delivery-form-wrapper">
                   <p class="delivery-text">Укажите адрес и дату доставки, и мы свяжемся с&nbsp;вами, чтобы подтвердить
                     заказ.</p>
                   <form class="delivery-form" action="https://echo.htmlacademy.ru/" method="post">
                     <p class="field-group delivery-form-date">
-                      <label class="form-label form-label-date" for="delivery-date"> Дата</label>
+                      <label class="form-label form-label-date" for="delivery-date">
+                        <a class="tooltip-link" href="#" >Дата
+                          <span class="tooltip-text">Введите дату</span>
+
+                        </a>
+                      </label>
                       <input class="form-field" type="text" id="delivery-date" name="delivery-date"
                         placeholder="01.04.2020" required>
                     </p>
@@ -457,7 +463,11 @@
                         name="delivery-phone" required>
                     </p>
                     <p class="field-group delivery-form-address">
-                      <label class="form-label form-label-address" for="address-info">Адрес</label>
+                      <label class="form-label form-label-address" for="address-info">
+                        <a class="tooltip-link" href="#">Адрес
+                          <span class="tooltip-text">Введите название улицы, дома и квартиры</span>
+                        </a>
+                      </label>
                       <input class="form-field" type="text" id="address-info" placeholder="ул. Большая Конюшенная, 19/8"
                         name="delivery-address" required>
                     </p>
@@ -469,10 +479,10 @@
               <section class="contacts">
                 <h2 class="visually-hidden">Контакты компании Глейси.</h2>
                 <div class="contacts-wrapper">
-                  <h3 class="address-caption">Адрес главного офиса<br>и офлайн-магазина:</h3>
+                  <h3 class="address-caption">Адрес главного офиса и&nbsp;офлайн-магазина:</h3>
                   <address class="address">
                     <p class="address-info">
-                      наб. реки Карповки,<br>5 лит П, Санкт-Петербург
+                      наб. реки Карповки, <br> 5 лит П, Санкт-Петербург
                     </p>
                     <p class="contacts-phone-text">Для заказов по телефону:</p>
                     <a class="contacts-phone" href="tel.:+78128121212">+7 (812) 812-12-12</a>
@@ -535,6 +545,29 @@
           </div>
         </div>
 
+<!--МОДАЛЬНОЕ ОКНО-->
+<div class="modal-container modal-container-close">
+
+  <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post" >
+    <button class="modal-close-button">
+      <span class="visually-hidden">Кнопка закрытия формы обратной связи.</span>
+    </button>
+    <h2 class="visually-hidden">Форма обратной связи.</h2>
+    <p class="modal-form-slogan">Мы обязательно ответим вам!</p>
+    <label for="name" class="visually-hidden">Введите Ваше Имя и Фамилию.</label>
+      <input class="input-name" type="text"  name="name" id="name" placeholder="Имя и фамилия" required>
+
+    <label for="email" class="visually-hidden">Введите Ваш Имейл</label>
+      <input class="email-input" type="text"  name="email" id="email" placeholder="email@example.com" required>
+
+    <label class="visually-hidden" for="modal-text" >Введите Ваш вопрос.</label>
+    <textarea class="modal-text"  name="modal-text" id="modal-text" cols="30" rows="10"
+   placeholder="В свободной форме" required></textarea>
+<button class="modal-button button">Отправить</button>
+  </form>
+
+</div>
+<script src="scripts/script.js"></script>
       </body>
 
     </html>
