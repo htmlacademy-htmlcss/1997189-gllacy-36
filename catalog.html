@@ -71,7 +71,7 @@
                 </a>
                 <div class="search-form-wrapper">
                   <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="get">
-                    <input class="search-form-input" name="form-search" type="text" id="form-search"
+                    <input class="search-form-input input-field-state" name="form-search" type="text" id="form-search"
                       placeholder="Поиск по сайту" required>
                     <label class="visually-hidden" for="form-search">Поиск товара на сайте</label>
                     <button class="header-form-button" type="button">
@@ -95,12 +95,12 @@
                     <form class="auth-form" action="https://echo.htmlacademy.ru/" method="post">
                       <div class="field-group auth-login-group">
                         <label for="auth-login" class="visually-hidden"></label>
-                        <input class="auth-form-field" type="email" id="auth-login" name="auth-login"
+                        <input class="auth-form-field input-field-state" type="email" id="auth-login" name="auth-login"
                           placeholder="Введите логин" required>
                       </div>
                       <div class="field-group auth-password-group">
                         <label for="auth-password" class="visually-hidden"></label>
-                        <input class="auth-form-field" type="password" id="auth-password" name="auth-password"
+                        <input class="auth-form-field input-field-state" type="password" id="auth-password" name="auth-password"
                           placeholder="Введите пароль" required>
                       </div>
 
@@ -681,39 +681,40 @@
                 </a>
               </li>
               <li class="socials-list-item">
-                <a href="https://www.youtube.com/user/htmlacademyru" class="footer-socials-link footer-socials-youtube">
+                <a href="https://www.youtube.com/user/htmlacademyru"
+                  class="footer-socials-link footer-socials-youtube">
                   <span class="visually-hidden">Youtube</span>
                 </a>
               </li>
             </ul>
           </div>
-          <div class="footer-about-wrapper">
+
             <ul class="about-production-list">
-              <li class="about-production-item">
+              <li class="about-production-item about-production-item-heart">
                 <a href="#" class="about-production-link production-link-heart">Для поставщиков</a>
+              </li>
+
+              <li class="about-production-item">
+                <a href="#" class="about-production-link">Наши документы</a>
               </li>
               <li class="about-production-item">
                 <a href="#" class="about-production-link">
                   О производстве
                 </a>
               </li>
-            </ul>
-            <ul class="about-documents">
-              <li class="about-documents-item">
-                <a href="#" class="about-documents-link">Наши документы</a>
-              </li>
-              <li class="about-documents-item">
-                <a href="#" class="about-documents-link">Экологические стандарты</a>
+              <li class="about-production-item">
+                <a href="#" class="about-production-link">Экологические стандарты</a>
               </li>
             </ul>
-          </div>
+
+
           <div class="html-academy-about">
             <a class="htmlacademy-logo-link" href="https://htmlacademy.ru/">
               <img class="html-academy-logo" src="images/logo-htmlacademy.svg" width="93" height="27"
                 alt="Логотип HTML-академии.">
             </a>
             <a class="copyright-row" href="https://htmlacademy.ru/">
-              Сделано в .html academy © 2021</a>
+              Сделано в <span class="copyright-row-text">.html academy</span> © 2021</a>
           </div>
         </footer>
       </div>
