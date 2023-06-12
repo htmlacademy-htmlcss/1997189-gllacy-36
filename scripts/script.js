@@ -7,7 +7,17 @@ const prev = document.querySelector('.previous-button');
 const sliderItemsTags = document.querySelectorAll('.slider-screen-item');
 const bullits = document.querySelectorAll('.slider-dots-button');
 
+const sliderScreenLinks = document.querySelectorAll('.slider-screen-item a');
 
+const setFocuses = () => {
+  sliderScreenLinks.forEach((link) => {
+    link.tabIndex = -1;
+  });
+
+  document.querySelectorAll('.slider-screen-item-current a').forEach((link) => {
+    link.tabIndex = 0;
+  });
+};
 
 feedbackLink.addEventListener('click', (evt) => {
   evt.preventDefault();
@@ -21,6 +31,7 @@ modalCloseButton.addEventListener ('click', () => {
 const model = [true, false, false];
 
 document.body.classList.add('theme-1');
+setFocuses();
 
 const renderActiveScreen = (index) => {
   document.querySelector('.slider-screen-item-current').classList.remove('slider-screen-item-current');
@@ -40,6 +51,8 @@ const renderActiveScreen = (index) => {
 
   document.querySelector('.slider-dots-current').classList.remove('slider-dots-current');
   Array.from(bullits)[index].classList.add('slider-dots-current');
+
+  setFocuses();
 }
 
 const getNextScreen = () => {
