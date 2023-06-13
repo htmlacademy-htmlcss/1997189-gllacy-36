@@ -217,6 +217,10 @@ body {
   flex-shrink: 0;
 }
 
+.about-serving-caption-link:hover,
+.products-item-link:hover .products-item-caption,
+.htmlacademy-logo-link:hover,
+.page-header-link:hover,
 .contacts-phone:hover,
 .phonenumber-link:hover,
 .about-production-link:hover,
@@ -224,6 +228,10 @@ body {
   opacity: 0.7;
 }
 
+.about-serving-caption-link:active,
+.products-item-link:active .products-item-caption,
+.htmlacademy-logo-link:active,
+.page-header-link:active,
 .phonenumber-link:active,
 .breadcrumbs-item-link:active,
 .contacts-phone:active {
@@ -1713,7 +1721,7 @@ body {
   border-radius: 16px;
 }
 
-.about-searving-caption {
+.about-serving-caption {
   padding: 0;
   margin: 0;
   font-size: 24px;
@@ -1722,14 +1730,15 @@ body {
   width: 303px;
 }
 
-.about-searving-caption-link:focus-visible {
-  outline: 2px solid rgb(45, 52, 64);
-  outline-offset: 2px;
-}
-
-.about-searving-caption-link {
+.about-serving-caption-link {
   text-decoration: none;
   color: inherit;
+  display: inline-block;
+}
+
+.about-serving-caption-link:focus-visible {
+  outline: 2px solid rgb(45, 52, 64);
+  outline-offset: 2px;
 }
 
 .blog-row {
